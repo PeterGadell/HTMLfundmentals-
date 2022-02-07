@@ -10,7 +10,7 @@
   <body>
     <!-- conainter element nav used to group links together and we use the headrer element to 
       group together our h1 and our nav -->
-    <header>
+    <header class="main-header">
       <h1>📘 The Code Magazine</h1>
 
       <nav>
@@ -32,7 +32,9 @@
           height="50px"
         />
 
-        <p>Posted by <strong>Peter Gadell</strong> on Monday, June 21st 2022</p>
+        <p id="author">
+          Posted by <strong>Peter Gadell</strong> on Monday, June 21st 2022
+        </p>
 
         <img
           src="images\post-img.jpg"
@@ -102,27 +104,29 @@
     </article>
     <aside>
       <h4>Related Posts</h4>
-      <ul>
+      <ul class="related">
         <li>
           <img src="images\related-1.jpg" height="75" width="75" /><a href="#"
             >How to learn web development</a
           >
-          <h5>By Peter Gadell</h5>
+          <h5 class="related-author">By Peter Gadell</h5>
         </li>
         <li>
           <img src="images\related-2.jpg" height="75" width="75" /><a href="#"
             >The unknown powers of CSS</a
           >
-          <h5>By John Smith</h5>
+          <h5 class="related-author">By John Smith</h5>
         </li>
         <li>
           <img src="images\related-3.jpg" height="75" width="75" /><a href="#"
             >Why Javascript is awesome</a
           >
-          <h5>By Jane Doe</h5>
+          <h5 class="related-author">By Jane Doe</h5>
         </li>
       </ul>
     </aside>
-    <footer>Copyright &copy; 2022 by the Code Magazine</footer>
+    <footer>
+      <p id="copyright">Copyright &copy; 2022 by the Code Magazine</p>
+    </footer>
   </body>
 </html>
